@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+</head>
+<body>
+<script>
+	let a = +prompt("Enter num a");
+	let b = +prompt("Enter num b");
+	let c = +prompt("Enter num c");
+	let del = Math.pow(b,2) - (4 * a * c);
+	console.log(del);
+	if(del >0){
+		//alert(del);
+		alert("Phương trình có 2 nghiệm phân biệt:" + "x1 =" +(-b + Math.sqrt(del)/2*a) + " x2 =" +(-b - Math.sqrt(del)/2*a));
+	}else if (del==0){
+		alert("Phương trình có nghiệm kép x1 = x2= " + (-b/2));
+	}else {
+		alert("Phương trình vô nghiệm")
+	}
+	
+</script>
+</body>
+</html>

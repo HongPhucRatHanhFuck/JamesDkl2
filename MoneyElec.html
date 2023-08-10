@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+</head>
+<body>
+<script>
+	let kWh = prompt("Enter your kWh");
+	let LE = prompt("Enter your level Energy");
+	if (kWh>0 && LE == 1){
+		alert("Your money is:" + kWh * 1.484 + " VND");
+	} else if (kWh>0 && LE == 2){
+		alert("Your money is:" + kWh * 1.533 + " VND");
+	}else if(kWh>0 && LE == 3){
+		alert("Your money is:" + kWh * 1.786 + " VND");
+	}else if(kWh>0 && LE == 4){
+		alert("Your money is:" + kWh * 2.424 + " VND");
+	}else if(kWh>0 && LE == 5){
+		alert("Your money is:" + kWh * 2.503 + " VND");
+	}else {
+		alert("What's wrong");-1
+	}
+</script>
+</body>
+</html>
